@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
-import './video.css'
+import VideoFooter from './components/footer/VideoFooter';
+import './video.css';
+import video from '../assets/video1.mp4'
 
 function Video() {
 
@@ -23,9 +25,11 @@ function Video() {
                 ref={videoRef}
                 onClick={handleStart}
                 loop
-                src='https://firebasestorage.googleapis.com/v0/b/jornada-dev.appspot.com/o/brecker2.mp4?alt=media&token=b5399418-9276-4e53-a706-1e00290c2c74'
+                src={video}
             >
             </video>
+            {/* Sidebar */}
+            <VideoFooter />
         </div>
     )
 }
