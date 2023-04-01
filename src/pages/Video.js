@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import VideoFooter from './components/footer/VideoFooter';
+import VideoSidebar from './components/sidebar/VideoSidebar';
 import './video.css';
-import video from '../assets/video1.mp4'
 
 function Video() {
 
@@ -25,10 +25,10 @@ function Video() {
                 ref={videoRef}
                 onClick={handleStart}
                 loop
-                src={video}
+                src='https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4'
             >
             </video>
-            {/* Sidebar */}
+            <VideoSidebar />
             <VideoFooter />
         </div>
     )

@@ -1,7 +1,6 @@
 import React from "react";
 import "./VideoFooter.css";
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import vinil from '../../../assets/vinil.png'
 
 function VideoFooter() {
     return (
@@ -19,7 +18,7 @@ function VideoFooter() {
             <img 
                 className="videoFooter__record"
                 alt="Imagem de um vinil girando"
-                src={vinil}
+                src='https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/vinil.png'
             />
         </div>
     );
